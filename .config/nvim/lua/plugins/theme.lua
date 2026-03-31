@@ -1,0 +1,1 @@
+/home/netale/.config/omarchy/current/theme/neovim.lua
