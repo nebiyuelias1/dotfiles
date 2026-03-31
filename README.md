@@ -1,5 +1,5 @@
 ## dotfiles
-###🚀 Installation
+### 🚀 Installation
 ```bash
 curl -Lks https://raw.githubusercontent.com/nebiyuelias1/dotfiles/main/install.sh | bash
 ```
