@@ -1,9 +1,9 @@
 ## dotfiles
-🚀 Installation on a new system
+###🚀 Installation
 ```bash
 curl -Lks https://raw.githubusercontent.com/nebiyuelias1/dotfiles/main/install.sh | bash
 ```
-🛠️ Usage
+### 🛠️ Usage
 Add a new configuration file
 Because we ignore untracked files by default (status.showUntrackedFiles no), you must explicitly add new files:
 ```bash
