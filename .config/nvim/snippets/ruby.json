@@ -1,0 +1,32 @@
+{
+  "Rails resources block": {
+    "prefix": "res",
+    "body": ["resources :${1:resource} do", "\t$0", "end"],
+    "description": "Rails resources block with do...end"
+  },
+  "Rails Controller Integration Test": {
+    "prefix": "test_controller",
+    "body": [
+      "require \"test_helper\"",
+      "",
+      "class ${1:Resource}ControllerTest < ActionDispatch::IntegrationTest",
+      "\tinclude Devise::Test::IntegrationHelpers",
+      "",
+      "\tsetup do",
+      "\t\t@user = users(:one)",
+      "\tend",
+      "",
+      "end"
+    ],
+    "description": "Devise authenticated controller integration test boilerplate"
+  },
+  "Basic Rails Controller": {
+    "prefix": "controller",
+    "body": [
+      "class ${1:Name}Controller < ApplicationController",
+      "\t$0",
+      "end"
+    ],
+    "description": "Basic Rails controller boilerplate"
+  }
+}
