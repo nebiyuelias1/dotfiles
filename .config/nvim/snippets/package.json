@@ -1,10 +1,10 @@
 {
-  name: my-custom-snippets,
-  contributes: {
-    snippets: [
+  "name": "my-custom-snippets",
+  "contributes": {
+    "snippets": [
       {
-        language: [eruby, html],
-        path: ./eruby.json
+        "language": ["eruby", "html"],
+        "path": "./eruby.json"
       },
       {
         "language": ["ruby"],
