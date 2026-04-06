@@ -28,5 +28,19 @@
       "end"
     ],
     "description": "Basic Rails controller boilerplate"
+  },
+  "Rails Add Column Migration": {
+    "prefix": "add_column",
+    "body": [
+      "add_column :${1:table_name}, :${2:column_name}, :${3:type}"
+    ],
+    "description": "Rails add_column migration"
+  },
+  "Rails Model Enum": {
+    "prefix": "enum",
+    "body": [
+      "enum :${1:status}, { ${2:active}: 0, ${3:inactive}: 1, ${4:archived}: 2 }, default: :${2:active}"
+    ],
+    "description": "Create an enum in a Rails model (Rails 7+ syntax)"
   }
 }

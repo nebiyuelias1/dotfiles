@@ -1,0 +1,24 @@
+{
+  "Stimulus Controller": {
+    "prefix": "stimulus",
+    "body": [
+      "import { Controller } from \"@hotwired/stimulus\"",
+      "",
+      "// Connects to data-controller=\"${1:name}\"",
+      "export default class extends Controller {",
+      "  // HTML: data-${1:name}-target=\"${2:target}\"",
+      "  // JS: this.${2:target}Target",
+      "  static targets = [\"${2:target}\"]",
+      "",
+      "  // HTML: data-${1:name}-${3:value}-value=\"...\"",
+      "  // JS: this.${3:value}Value",
+      "  static values = { ${3:value}: ${4:String} }",
+      "",
+      "  connect() {",
+      "    ${0}",
+      "  }",
+      "}"
+    ],
+    "description": "Create a new Stimulus controller"
+  }
+}
