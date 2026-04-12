@@ -5,5 +5,14 @@
       "<%= button_to \"${1:Button Text}\", ${2:some_path}, method: :get, class: \"bg-blue-50 text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-md text-sm font-medium transition-colors\" %>"
     ],
     "description": "Rails button_to helper with Tailwind"
+  },
+  "Rails form_with": {
+    "prefix": "form_with",
+    "body": [
+      "<%= form_with model: ${1:@model}, class: \"${2:contents}\" do |form| %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "Rails form_with helper"
   }
 }
