@@ -31,9 +31,7 @@
   },
   "Rails Add Column Migration": {
     "prefix": "add_column",
-    "body": [
-      "add_column :${1:table_name}, :${2:column_name}, :${3:type}"
-    ],
+    "body": ["add_column :${1:table_name}, :${2:column_name}, :${3:type}"],
     "description": "Rails add_column migration"
   },
   "Rails Model Enum": {
@@ -42,5 +40,12 @@
       "enum :${1:status}, { ${2:active}: 0, ${3:inactive}: 1, ${4:archived}: 2 }, default: :${2:active}"
     ],
     "description": "Create an enum in a Rails model (Rails 7+ syntax)"
+  },
+  "Rails add_check_constraint": {
+    "prefix": "add_check_constraint",
+    "body": [
+      "add_check_constraint :book_reads, \"max_capacity IS NULL OR max_capacity >= 2\", name: \"book_reads_max_capacity_min\""
+    ],
+    "description": "Rails add_check_constraint for book_reads"
   }
 }
