@@ -121,7 +121,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 # alias p='python'
 
 . "$HOME/.cargo/env"
-alias dotfiles='/usr/bin/git --git-dir=/home/netale/git/dotfiles/ --work-tree=/home/netale'
+alias dotfiles='/usr/bin/git --git-dir="$HOME/git/dotfiles/" --work-tree="$HOME"'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
