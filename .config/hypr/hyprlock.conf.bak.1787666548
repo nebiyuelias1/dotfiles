@@ -1,8 +1,4 @@
-$color = #1a1b26
-$inner_color = #0e0e14
-$outer_color = #24283b
-$check_color = #7aa2f7
-$font_color = #a9b1d6
+source = ~/.config/omarchy/current/theme/hyprlock.conf
 
 general {
     ignore_empty_input = true
@@ -11,7 +7,7 @@ general {
 background {
     monitor =
     color = $color
-    path = ~/.local/state/omarchy/current/background
+    path = ~/.config/omarchy/current/background
     blur_passes = 3
 }
 
